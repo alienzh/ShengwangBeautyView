@@ -69,10 +69,10 @@ object StickerNames {
     const val CHRISTMAS = "Sticker-Christmas"         // 圣诞节
     const val SQUID = "Sticker-Squid"               // 章鱼
     const val PIGGY = "Sticker-Piggy"            // 猪可爱
-    const val LONG_CAT = "Sticker-Long"          // 辫子猫
+    const val LONG_CAT = "Sticker-Longcat"          // 辫子猫
     const val HAIRHOOP = "Sticker-Hairhoop"        // 粉色发箍
     const val RELAX_TIME = "Sticker-Relax"      // 没有烦恼
-    const val CARTOON_CAT = "Sticker-Cartoon"      // 卡通猫
+    const val CARTOON_CAT = "Sticker-Cartooncat"      // 卡通猫
     const val BUTTERFLY = "Sticker-Butterfly"           // 蝴蝶
     const val BRUSH = "Sticker-Brush"          // 粉刷时光
     const val CYBER_GLASS = "Sticker-Glass"    // 赛博眼镜
