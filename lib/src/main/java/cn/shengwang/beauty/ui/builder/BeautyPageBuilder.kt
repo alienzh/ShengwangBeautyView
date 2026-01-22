@@ -60,7 +60,7 @@ internal class BeautyPageBuilder(
         beautyItems.add(
             BeautyItemInfo(
                 R.string.beauty_effect_reset,
-                R.drawable.beauty_ic_effect_brightness,
+                R.drawable.beauty_ic_effect_reset,
                 showSlider = false,
                 type = BeautyItemType.RESET,
                 onItemClick = {
@@ -314,7 +314,7 @@ internal class BeautyPageBuilder(
         addFaceShapeItem(
             items,
             R.string.beauty_face_shape_nose_root,
-            R.drawable.beauty_ic_face_shape_nose_width,
+            R.drawable.beauty_ic_face_shape_nose_root,
             beautyConfig.noseRoot
         ) { value ->
             beautyConfig.noseRoot = value
@@ -323,7 +323,7 @@ internal class BeautyPageBuilder(
         addFaceShapeItem(
             items,
             R.string.beauty_face_shape_nose_bridge,
-            R.drawable.beauty_ic_face_shape_nose_width,
+            R.drawable.beauty_ic_face_shape_nose_bridge,
             beautyConfig.noseBridge
         ) { value ->
             beautyConfig.noseBridge = value
@@ -332,7 +332,7 @@ internal class BeautyPageBuilder(
         addFaceShapeItem(
             items,
             R.string.beauty_face_shape_nose_tip,
-            R.drawable.beauty_ic_face_shape_nose_width,
+            R.drawable.beauty_ic_face_shape_nose_tip,
             beautyConfig.noseTip
         ) { value ->
             beautyConfig.noseTip = value
@@ -341,7 +341,7 @@ internal class BeautyPageBuilder(
         addFaceShapeItem(
             items,
             R.string.beauty_face_shape_nose_wing,
-            R.drawable.beauty_ic_face_shape_nose_width,
+            R.drawable.beauty_ic_face_shape_nose_wing,
             beautyConfig.noseWing
         ) { value ->
             beautyConfig.noseWing = value
@@ -360,7 +360,7 @@ internal class BeautyPageBuilder(
         addFaceShapeItem(
             items,
             R.string.beauty_face_shape_nose_general,
-            R.drawable.beauty_ic_face_shape_nose_width,
+            R.drawable.beauty_ic_face_shape_nose_general,
             beautyConfig.noseGeneral,
             valueRange = -100f..100f
         ) { value ->
@@ -538,7 +538,7 @@ internal class BeautyPageBuilder(
         addQualityItem(
             items,
             R.string.beauty_effect_temperature,
-            R.drawable.beauty_ic_effect_contrast_strength,
+            R.drawable.beauty_ic_effect_temperature,
             beautyConfig.temperature
         ) { value ->
             beautyConfig.temperature = value
@@ -547,7 +547,7 @@ internal class BeautyPageBuilder(
         addQualityItem(
             items,
             R.string.beauty_effect_hue,
-            R.drawable.beauty_ic_effect_contrast_strength,
+            R.drawable.beauty_ic_effect_hue,
             beautyConfig.hue
         ) { value ->
             beautyConfig.hue = value
@@ -565,7 +565,7 @@ internal class BeautyPageBuilder(
         addQualityItem(
             items,
             R.string.beauty_effect_brightness,
-            R.drawable.beauty_ic_effect_contrast_strength,
+            R.drawable.beauty_ic_effect_brightness,
             beautyConfig.brightness
         ) { value ->
             beautyConfig.brightness = value
