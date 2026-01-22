@@ -13,6 +13,7 @@ import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import cn.shengwang.beauty.demo.databinding.ActivityBeautyExampleBinding
+import cn.shengwang.beauty.ui.model.BeautyModule
 import io.agora.rtc2.Constants
 import io.agora.rtc2.IRtcEngineEventHandler
 import io.agora.rtc2.RtcEngine
@@ -104,6 +105,18 @@ class BeautyExampleActivity : AppCompatActivity() {
             }
         }
 
+        binding.tvSaveBeauty.setOnClickListener {
+            if (isInitialized) {
+                binding.beautyControlView.saveBeauty(BeautyModule.BEAUTY)
+            }
+        }
+
+        binding.tvResetBeauty.setOnClickListener {
+            if (isInitialized) {
+                binding.beautyControlView.resetBeauty(BeautyModule.BEAUTY)
+            }
+        }
+
         // 权限已在 MainActivity 中申请，直接初始化美颜功能
         initializeBeauty()
 
@@ -129,7 +142,7 @@ class BeautyExampleActivity : AppCompatActivity() {
     private fun createRtcEngine(): RtcEngineEx {
         val config = RtcEngineConfig()
         config.mContext = App.instance()
-        config.mAppId = BuildConfig.Shengwang_App_ID
+        config.mAppId = BuildConfig.App_ID
         config.addExtension("agora_ai_echo_cancellation_extension")
         config.addExtension("agora_ai_noise_suppression_extension")
         config.mEventHandler = object : IRtcEngineEventHandler() {
@@ -190,6 +203,7 @@ class BeautyExampleActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         if (isInitialized && rtcEngine != null) {
+            isInitialized = false
             rtcEngine?.stopPreview()
             rtcEngine?.leaveChannel()
 

@@ -66,8 +66,6 @@ internal class BeautyPageBuilder(
                 onItemClick = {
                     // 调用重置功能
                     beautyConfig.resetBeauty()
-                    // 重置后开启美颜
-                    beautyConfig.beautyEnable = true
                     // 刷新整个页面列表以更新开关状态和其他参数值
                     refreshPageList.invoke()
                 }

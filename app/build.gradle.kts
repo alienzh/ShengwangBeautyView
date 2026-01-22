@@ -32,7 +32,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "Shengwang_App_ID", "\"${properties.getProperty("shengwang.appId", "")}\"")
+        buildConfigField("String", "App_ID", "\"${properties.getProperty("appId", "")}\"")
     }
 
     signingConfigs {

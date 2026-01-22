@@ -134,8 +134,7 @@ object BeautyManager {
     }
 
     private fun isMaterialCopied(context: Context): Boolean {
-//        return getSharedPreferences(context).getBoolean(KEY_MATERIAL_COPIED, false)
-        return false
+        return getSharedPreferences(context).getBoolean(KEY_MATERIAL_COPIED, false)
     }
 
     private fun setMaterialCopied(context: Context, copied: Boolean) {

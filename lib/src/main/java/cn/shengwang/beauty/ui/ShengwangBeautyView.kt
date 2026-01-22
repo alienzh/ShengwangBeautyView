@@ -335,6 +335,8 @@ class ShengwangBeautyView : android.widget.FrameLayout {
      */
     fun resetBeauty(type: BeautyModule = BeautyModule.BEAUTY) {
         beautyConfig.resetBeauty(type)
+        // 刷新整个页面列表以更新开关状态和其他参数值
+        refreshPageList()
     }
 
     /**
